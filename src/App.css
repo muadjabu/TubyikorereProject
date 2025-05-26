@@ -1,0 +1,124 @@
+/* App.css */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.quiz-box, .result-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.question-count {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.answer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.answer-item {
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 12px;
+  width: 80%;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.answer-item:hover {
+  background: #e6e6e6;
+}
+
+.answer-item.selected {
+  background: #d2f8d2;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.tick {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  font-size: 18px;
+  color: green;
+}
+
+.next-button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.next-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled) {
+  background: #388e3c;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-left {
+  flex: 1;
+}
+
+.card-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.timer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ff4d4d;
+}
+
