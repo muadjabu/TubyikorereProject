@@ -1,9 +1,23 @@
 {
-  "welcome": "Welcome",
-  "learnDescription": "Discover new skills and expand your knowledge at your own pace.",
-  "fastAndFun": "Fast and Fun",
-  "funDescription": "Our courses are designed to be engaging and efficient.",
-  "trackProgress": "Track Your Progress",
-  "progressDescription": "Monitor your learning journey and celebrate your achievements."
+  "home": "Home",
+  "About Us": "About us",
+  "pricing": "Pricing",
+  "courses": "Courses",
+  "jobs": "Jobs",
+  "login": "Login",
+  "exploreCourses": "Explore our courses",
+  "start": "Start",
+  "landServices": "Land Services",
+  "landDescription": "We help individuals and businesses with the process of registering land, ensuring all documentation is correctly filed with the local authorities.",
+  "Traffic Laws": "Traffic Laws",
+  "trafficDescription": "We provide comprehensive lessons on traffic laws and road safety. Learn the rules of the road, understand traffic signs, and gain the knowledge you need to drive responsibly and legally.",
+  "trackProgress": "Track Progress",
+  "progressDescription": "Track your learning journey and celebrate your achievements.",
+  "aboutLine1": "Tubyikorere Online Services is a digital platform dedicated to empowering individuals by providing practical, self-service guidance on a wide range of topics. From land services and driving rules to online registration and government procedures, our mission is to simplify complex services and make them accessible to everyone. We believe in self-reliance and aim to equip our community with the knowledge and confidence to handle common tasks without needing intermediaries.",
+ 
+  "mission": "Our Mission",
+  "missionLine1": "Making tech education accessible, engaging, and rewarding for everyone,",
+  "missionLine2": "We aim to bridge the skills gap through a hands-on learning platform."
 }
+
 
