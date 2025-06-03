@@ -3,14 +3,16 @@ import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
 import rda from "../assets/rda.png";
 import uk from "../assets/uk.png";
 import france from "../assets/france.jpg";
 import ff from "../assets/ff.jpg";
 import g2 from "../assets/g2.jpg";
-import mapIcon from "../assets/icons/map-pin-yellow.jpg";
 import traffIcon from "../assets/icons/traffic.jpg";
+import jobIcon from "../assets/icons/job.png";
+import warningIcon from "../assets/icons/warning.png";
+import aboutImage from "../assets/car.jpg";
 const languages = [
   { code: 'rw', name: 'Kinyarwanda', flag: rda },
   { code: 'en', name: 'English', flag: uk },
@@ -137,20 +139,7 @@ export default function Home() {
         style={{ backgroundImage: `url(${ff})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         <div className="grid grid-cols-1 m-10 md:grid-cols-3 gap-6 px-8 py-12">
-         <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center shadow-lg text-black">
-  <h3 className="inline-flex items-center justify-center text-xl font-bold mb-2">
-    <img
-      src={mapIcon}
-      alt="Map pin icon"
-      className="h-10 w-20 mr-0"
-      role="img"
-    />
-    {t("landServices")}
-  </h3>
-  <p className="text-gray-600">{t("landDescription")}</p>
-</div>
-
-          <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center shadow-lg text-black">
+    <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center shadow-lg text-black">
             <h3 className="inline-flex items-center justify-center text-xl font-bold mb-2"> 
                 <img 
             src={traffIcon}
@@ -162,43 +151,72 @@ export default function Home() {
           
             <p className="text-gray-600">{t("trafficDescription")}</p>
           </div>
+
+              <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center shadow-lg text-black">
+  <h3 className="inline-flex items-center justify-center text-xl font-bold mb-2">
+    <img
+      src={jobIcon}
+      alt="job icon"
+      className="h-7 w-9 mr-1"
+      role="img"
+    />
+    {t("Job Updates")}
+  </h3>
+  <p className="text-gray-600">{t("JobDescription")}</p>
+</div>
           <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center shadow-lg text-black">
-            <h3 className="text-xl font-bold mb-2">📊 {t("trackProgress")}</h3>
-            <p className="text-gray-600">{t("progressDescription")}</p>
+            <h3 className="inline-flex items-center justify-center text-xl font-bold mb-2">
+               <img
+      src={warningIcon}
+      alt="warning icon"
+      className="h-7 w-9 mr-2"
+      role="img"
+    />
+               {t("Today's provisional tests")}</h3>
+            <p className="text-gray-600">{t("testDescription")}</p>
           </div>
         </div>
       </section>
 
-      <section
-        id="about"
-        className="relative py-12 px-4 overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(135deg, rgba(240, 244, 245, 0.7), rgba(254, 255, 255, 0.99)), url('https://www.transparenttextures.com/patterns/stardust.png')`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "cover",
-          backdropFilter: "blur(2px)",
-        }}
-      >
-        <div className="relative bg-white bg-opacity-90 p-8 rounded-lg shadow-md mx-4 md:mx-12 backdrop-blur-md">
-          <h2 className="text-4xl font-bold text-black text-center mb-6">{t("About Us")}</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">{t("aboutLine1")}</p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">{t("aboutLine2")}</p>
-        </div>
-      </section>
+ <section
+  id="about"
+  className="relative py-5 px-6 md:px-16 overflow-hidden"
+>
+  <div className="flex flex-col md:flex-row items-center gap-16 max-w-17xl mx-auto">
+    
+    {/* Left: Full Image */}
+    <div className="w-full md:w-1/2">
+    <img src={aboutImage} alt="" srcset="" />
+    </div>
 
-      <section
-        id="mission"
-        className="relative py-12 px-4 overflow-hidden mt-12"
-        style={{ backgroundImage: `url(${g2})`, backgroundSize: "cover", backgroundPosition: "center" }}
-      >
-        <div className="relative bg-white bg-opacity-90 p-8 rounded-lg shadow-md mx-4 md:mx-12 backdrop-blur-md">
-          <h2 className="text-4xl font-bold text-black text-center mb-6">🎯 {t("mission")}</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">{t("missionLine1")}</p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">{t("missionLine2")}</p>
-        </div>
-      </section>
+    {/* Right: Text Content */}
+    <div className="w-full md:w-1/2">
+      <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center md:text-left hover:text-yellow-500">
+        {t("About Us")}
+      </h2>
+      <div className="text-lg text-gray-800 leading-relaxed space-y-6 text-justify">
+        <div className="flex items-center gap-4 mb-6">
+  <div className="w-1 h-12 bg-yellow-500 rounded-full"></div>
+  <h2 className="text-2xl  font-bold text-black text-left hover:text-yellow-500">
+    Empower Your Journey With Self-Service Tools
+  </h2>
+</div>
 
-      <Courses />
+        <p>{t("aboutLine1")}</p>
+       <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center md:text-left hover:text-yellow-500">
+        👁️{t("Vision")}
+      </h2>
+       <p>{t("visionDescription")}</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+
+     {/*<Courses />*/}
 <footer style={{ backgroundColor: "#0d3547" }} className="text-gray-300 py-8 mt-12">
   <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
     
