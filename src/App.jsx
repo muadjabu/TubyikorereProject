@@ -1,9 +1,9 @@
 // src/App.jsx
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import Login from "./pages/login";
-import Register from "./pages/register";
-import Forgetform from "./pages/forgetform";
+import Home from "./components/Home"
+import Login from "./components/Login"
+import Register from "./components/Register"
+import ForgetForm from "./components/ForgetForm"
 import './i18n';
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgetform" element={<Forgetform />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/ForgetForm" element={<ForgetForm />} />
         {/* No need for /courses route separately if it's included inside Home */}
       </Routes>
     </Router>
