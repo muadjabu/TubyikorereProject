@@ -9,6 +9,7 @@ import logo from "../assets/logo2.png";
 import rda from "../assets/rda.png";
 import uk from "../assets/uk.png";
 import france from "../assets/france.jpg";
+import Aboutus from "../components/Aboutus";
 
 const languages = [
   { code: 'rw', name: 'Kinyarwanda', flag: rda },
@@ -76,8 +77,9 @@ export default function Navbar() {
 
   const navLinks = [
     { path: "/#home", label: t("home") },
-    { path: "/#about", label: t("About Us") },
-    { path: "/#mission", label: t("pricing") },
+    { path: "/Aboutus", label: t("About Us") },
+    { path: "/#pricing", label: t("pricing") },
+    { path: "/#JobUpdates", label: t("Job Updates") },
     { path: "/#courses", label: t("courses") },
   ];
 
