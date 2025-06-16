@@ -1,21 +1,28 @@
 {
-  "home": "Ahabanza",
-  "About Us": "Abo Turibo",
-  "pricing": "Igiciro",
-  "courses": "Amasomo",
-  "jobs": "Imirimo",
-  "login": "Injira",
-  "exploreCourses": "Reba Amasomo Yacu",
-  "start": "Tangira Kwiga",
-  "jobupdate": "Amakuru Y'Akazi",
-  "JobDescription": "Menya amakuru agezweho y’akazi mu Rwanda no mu mahanga. Dusangiza buri munsi imyanya y’akazi mu nzego za leta, imiryango itegamiye kuri leta (NGO), ibigo byigenga, amahugurwa ndetse n’buruse. Guma ku isonga mu rugendo rwawe rw’umwuga.",
-  "Traffic Laws": "Amategeko Y'umuhanda",
-  "trafficDescription": "Dutanga amasomo arambuye ku mategeko y’umuhanda n’umutekano wo mu muhanda. Menya amategeko agenga gutwara ibinyabiziga, ibimenyetso by’umuhanda, n’uko waba umushoferi w’umwizerwa.",
-  "Today's provisional tests": "Ibizamini byakozwe uyu munsi",
-  "testDescription": "Kurikirana ibikorwa byose by’ibizamini bya provisoire biri kuba uyu munsi — amakuru yihuse, asobanutse kandi yizewe. Ntuzigere ucikwa n’amakuru ajyanye n’ibizamini byo gutwara.",
-  "aboutLine1": "ThinkFaster ni urubuga rutanga amasomo yo kwiga ikoranabuhanga mu buryo bwimbitse kandi bushimishije.",
-  "aboutLine2": "Dutanga amasomo arimo ibikorwa ndetse n'ibizamini bigufasha kwiga neza kandi wihuta.",
-  "mission": "Intego yacu",
-  "missionLine1": "Gutuma amasomo y’ikoranabuhanga aboneka kuri bose kandi yoroheye buri wese.",
-  "missionLine2": "Intego yacu ni ugufasha abantu kubona ubumenyi binyuze mu kwiga bifatika."
+  "Traffic Laws": "Amategeko y'umuhanda",
+  "Job Updates": "Amakuru mashya y'akazi",
+  "Today's provisional tests": "Ibisubizo by'agateganyo by'uyu munsi",
+  "trafficDescription": "Menya amategeko y'umuhanda mu Rwanda kugira ngo utware neza.",
+  "JobDescription": "Jya ubona amakuru agezweho y'akazi gahari.",
+  "testDescription": "Kora ikizamini cy'imyitozo cyo uyu munsi ubone uko uhagaze.",
+
+  "empowerTitle": "Fata Iyambere ukoresheje Ibikoresho by'Ikwifasha",
+  "aboutLine1": "Urubuga rwacu rutanga ubufasha bwuzuye ku batwara ibinyabiziga mu Rwanda, harimo amategeko agezweho y'umuhanda, ibizamini by'imyitozo, n'amahirwe y'akazi mu rwego rwo gutwara abantu n'ibintu.",
+  "visionTitle": "Inyungu yacu",
+  "visionText": "Gushyiraho inzira zizewe mu Rwanda binyuze mu kwigisha abatwara ibinyabiziga no kubaha ibikoresho bibafasha gutsinda.",
+  "missionTitle": "Inshingano zacu",
+  "missionText": "Gufasha buri muntu wifuza gutwara kubona ubumenyi bwizewe, imyitozo y'ibizamini ku gihe, n'amahirwe y'akazi mu rwego rwo gutwara abantu n'ibintu.",
+
+  "safetyFirst": "Umutekano Ubanziriza Ibindi",
+  "updatedLaws": "Amategeko Agezweho",
+
+  "drivingTitle": "Ubufasha ku Batwara & Amahirwe y’Akazi",
+  "drivingText1": "Urubuga rutanga amategeko agezweho y'umuhanda, ibizamini by’imyitozo, n’amakuru y’akazi kugira ngo utsinde neza kandi ubone amahirwe mu bijyanye no gutwara mu Rwanda.",
+  "drivingText2": "Niba wifuza kwihugura mu gutwara cyangwa kumenya amakuru mashya ku kazi, turi hano ngo tukuganirize buri ntambwe yose.",
+
+  "sendMessageTitle": "Ohereza Ubutumwa",
+  "yourName": "Izina ryawe",
+  "yourEmail": "Email yawe",
+  "yourMessage": "Ubutumwa bwawe",
+  "submit": "Ohereza"
 }

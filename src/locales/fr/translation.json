@@ -1,21 +1,28 @@
 {
-  "home": "Accueil",
-  "About Us": "À propos de nous",
-  "pricing": "Tarification",
-  "courses": "Cours",
-  "jobs": "Emplois",
-  "login": "Connexion",
-  "exploreCourses": "Découvrez nos cours",
-  "start": "Commencer",
-  "landServices": "Services fonciers",
-  "landDescription": "Nous assistons les particuliers et les entreprises dans le processus d’enregistrement des terrains, en veillant à ce que tous les documents soient correctement soumis aux autorités locales.",
-  "Traffic Laws": "le Code de la Route",
-  "trafficDescription": "Nous offrons des cours complets sur le code de la route et la sécurité routière. Apprenez les règles de circulation, comprenez les panneaux de signalisation et acquérez les connaissances nécessaires pour conduire de manière responsable et légale.",
-  "trackProgress": "Suivez vos progrès",
-  "progressDescription": "Suivez votre parcours d'apprentissage et célébrez vos réussites.",
-  "aboutLine1": "ThinkFaster est une plateforme d'apprentissage interactive conçue pour vous doter de compétences techniques pratiques.",
-  "aboutLine2": "Nous proposons du contenu dynamique et des quiz pour rendre l'apprentissage amusant et efficace.",
-  "mission": "Notre mission",
-  "missionLine1": "Rendre l'éducation technologique accessible, engageante et gratifiante pour tous.",
-  "missionLine2": "Nous visons à combler le fossé des compétences grâce à une plateforme d'apprentissage pratique."
+  "Traffic Laws": "Code de la route",
+  "Job Updates": "Offres d'emploi récentes",
+  "Today's provisional tests": "Tests provisoires du jour",
+  "trafficDescription": "Apprenez les lois de la circulation au Rwanda pour conduire en toute sécurité.",
+  "JobDescription": "Restez informé des dernières offres d'emploi disponibles.",
+  "testDescription": "Passez le test pratique du jour et suivez vos progrès.",
+
+  "empowerTitle": "Renforcez votre parcours avec des outils d'auto-assistance",
+  "aboutLine1": "Notre plateforme fournit des ressources complètes pour les conducteurs au Rwanda, y compris les lois de la circulation à jour, des tests pratiques et des opportunités d'emploi dans le secteur du transport.",
+  "visionTitle": "Notre Vision",
+  "visionText": "Créer des routes plus sûres au Rwanda en éduquant les conducteurs et en leur fournissant les outils nécessaires à leur réussite.",
+  "missionTitle": "Notre Mission",
+  "missionText": "Autonomiser chaque futur conducteur avec une éducation fiable, une préparation aux examens en temps réel et des opportunités de carrière dans le domaine du transport.",
+
+  "safetyFirst": "La sécurité avant tout",
+  "updatedLaws": "Lois mises à jour",
+
+  "drivingTitle": "Ressources pour la conduite & Offres d'emploi",
+  "drivingText1": "Notre plateforme propose des lois de circulation à jour, des tests pratiques et des actualités sur l’emploi pour vous aider à réussir sur la route et à trouver des opportunités dans le secteur du transport au Rwanda.",
+  "drivingText2": "Que vous souhaitiez perfectionner vos compétences de conduite ou être au courant des dernières offres d'emploi, nous sommes là pour vous accompagner à chaque étape.",
+
+  "sendMessageTitle": "Envoyez-nous un message",
+  "yourName": "Votre nom",
+  "yourEmail": "Votre e-mail",
+  "yourMessage": "Votre message",
+  "submit": "Envoyer"
 }

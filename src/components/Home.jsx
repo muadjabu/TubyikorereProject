@@ -21,17 +21,17 @@ const features = [
   {
     icon: <FaTrafficLight className="text-2xl text-blue-600" />,
     title: "Traffic Laws",
-    description: "trafficDescription",
+    description: "home:trafficDescription",
   },
   {
     icon: <FaBriefcase className="text-2xl text-green-600" />,
     title: "Job Updates",
-    description: "JobDescription",
+    description: "home:JobDescription",
   },
   {
     icon: <FaClipboardCheck className="text-2xl text-yellow-600" />,
     title: "Today's provisional tests",
-    description: "testDescription",
+    description: "home:testDescription",
   },
 ];
 
@@ -50,7 +50,7 @@ const FeatureCard = ({ icon, title, description, t }) => (
 );
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['translation', 'home']);
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-white text-gray-900">
@@ -93,7 +93,7 @@ export default function Home() {
             Empower Your Journey With Self-Service Tools
           </h2>
           <p className="text-gray-600 text-lg mb-12">
-            {t("aboutLine1") ||
+            {t("home:aboutLine1") ||
               "Our platform provides comprehensive resources for drivers in Rwanda, offering up-to-date traffic laws, practice tests, and job opportunities in the transportation sector."}
           </p>
 

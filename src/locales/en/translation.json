@@ -1,24 +1,28 @@
 {
-  "home": "Home",
-  "About Us": "About us",
-  "pricing": "Pricing",
-  "courses": "Courses",
-  "jobs": "Jobs",
-  "login": "Login",
-  "exploreCourses": "Explore our courses",
-  "start": "Start",
-  "jobupdate": "Job Updates",
-  "JobDescription": "Find the latest job opportunities in Rwanda and beyond. We publish daily updates on government jobs, private sector openings, internships, and scholarships. Stay informed and never miss a chance to grow your career.",
   "Traffic Laws": "Traffic Laws",
-  "trafficDescription": "We provide comprehensive lessons on traffic laws and road safety. Learn the rules of the road, understand traffic signs, and gain the knowledge you need to drive responsibly and legally.",
-  "Today's provisional tests.": "Today's provisional tests.",
-  "testDescription": "Track all provisional test events happening today—quick, clear, and reliable updates,Never miss a driving test update",
-  "aboutLine1": "From job updates to driving test preparation, Tubyikorere is your trusted platform for navigating essential services in Rwanda. Learn, grow, and take control — anytime, anywhere.",
- "Vision": "Vision",
- "visionDescription":"We envision a self-reliant and digitally empowered Rwanda, where every individual can independently access, understand, and utilize essential services — from job opportunities to public procedures — with ease, confidence, and clarity.",
-  "mission": "Our Mission",
-  "missionLine1": "Making tech education accessible, engaging, and rewarding for everyone,",
-  "missionLine2": "We aim to bridge the skills gap through a hands-on learning platform."
+  "Job Updates": "Job Updates",
+  "Today's provisional tests": "Today's provisional tests",
+  "trafficDescription": "Learn Rwanda's traffic laws for safe driving.",
+  "JobDescription": "Stay updated with the latest job offers.",
+  "testDescription": "Take today's practice test and track your progress.",
+  
+  "empowerTitle": "Empower Your Journey With Self-Service Tools",
+  "aboutLine1": "Our platform provides comprehensive resources for drivers in Rwanda, offering up-to-date traffic laws, practice tests, and job opportunities in the transportation sector.",
+  "visionTitle": "Our Vision",
+  "visionText": "To create safer roads in Rwanda by educating drivers and providing them with the tools they need to succeed.",
+  "missionTitle": "Our Mission",
+  "missionText": "Empower every aspiring driver with reliable education, real-time test preparation, and career opportunities in transportation.",
+  
+  "safetyFirst": "Safety First",
+  "updatedLaws": "Updated Laws",
+
+  "drivingTitle": "Driving Resources & Job Opportunities",
+  "drivingText1": "Our platform provides up-to-date traffic laws, practice tests, and career updates to help you excel on the road and find opportunities in Rwanda's transport sector.",
+  "drivingText2": "Whether you want to master driving skills or stay informed about the latest job openings, we are here to empower your journey every step of the way.",
+
+  "sendMessageTitle": "Send Us a Message",
+  "yourName": "Your Name",
+  "yourEmail": "Your Email",
+  "yourMessage": "Your Message",
+  "submit": "Submit"
 }
-
-

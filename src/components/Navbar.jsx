@@ -16,55 +16,11 @@ const languages = [
   { code: 'fr', name: 'French', flag: france },
 ];
 
-function LanguageSelector() {
-  const { i18n } = useTranslation();
-  const [showDropdown, setShowDropdown] = useState(false);
-  const selected = languages.find((lang) => lang.code === i18n.language) || languages[0];
-
-  return (
-    <div
-      className="relative"
-      tabIndex={0}
-      onBlur={() => setShowDropdown(false)}
-    >
-      <button
-        className="flex items-center justify-between border border-gray-200 px-3 py-2 rounded-lg bg-white hover:bg-gray-50 shadow-sm w-48 transition-all duration-200 hover:shadow-md"
-        onClick={() => setShowDropdown(!showDropdown)}
-        aria-haspopup="true"
-        aria-expanded={showDropdown}
-      >
-        <div className="flex items-center space-x-2">
-          <img src={selected.flag} alt={selected.name} className="h-4 w-6 object-cover rounded" />
-          <span className="text-sm text-[#2A7B9B] font-medium">{selected.name}</span>
-        </div>
-        <FiChevronDown className={`w-4 h-4 text-[#2A7B9B] transition-transform duration-200 ${showDropdown ? "rotate-180" : ""}`} />
-      </button>
-
-      {showDropdown && (
-        <div className="absolute mt-2 bg-white rounded-lg shadow-xl w-full z-50 border border-gray-100 overflow-hidden transition-all duration-200">
-          {languages.map((lang) => (
-            <div
-              key={lang.code}
-              className="flex items-center px-3 py-2 hover:bg-blue-50 cursor-pointer space-x-2 transition-colors"
-              onClick={() => {
-                i18n.changeLanguage(lang.code);
-                setShowDropdown(false);
-              }}
-            >
-              <img src={lang.flag} alt={lang.name} className="h-4 w-6 object-cover rounded" />
-              <span className="text-sm text-[#0d3547] font-medium">{lang.name}</span>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function Navbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   const { pathname, hash } = useLocation();
   const phoneNumber = "+250790269730";
 
@@ -84,6 +40,8 @@ export default function Navbar() {
   const isActive = (linkPath) => {
     return linkPath === "/" ? pathname === "/" : hash === linkPath.replace("/#", "#");
   };
+
+  const selectedLanguage = languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const NavLinks = ({ onClick }) => (
     <>
@@ -130,7 +88,44 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center space-x-8 pl-8">
-              <LanguageSelector />
+              {/* Language Selector */}
+              <div
+                className="relative"
+                tabIndex={0}
+                onBlur={() => setShowLanguageDropdown(false)}
+              >
+                <button
+                  className="flex items-center justify-between border border-gray-200 px-3 py-2 rounded-lg bg-white hover:bg-gray-50 shadow-sm w-48 transition-all duration-200 hover:shadow-md"
+                  onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
+                  aria-haspopup="true"
+                  aria-expanded={showLanguageDropdown}
+                >
+                  <div className="flex items-center space-x-2">
+                    <img src={selectedLanguage.flag} alt={selectedLanguage.name} className="h-4 w-6 object-cover rounded" />
+                    <span className="text-sm text-[#2A7B9B] font-medium">{selectedLanguage.name}</span>
+                  </div>
+                  <FiChevronDown className={`w-4 h-4 text-[#2A7B9B] transition-transform duration-200 ${showLanguageDropdown ? "rotate-180" : ""}`} />
+                </button>
+
+                {showLanguageDropdown && (
+                  <div className="absolute mt-2 bg-white rounded-lg shadow-xl w-full z-50 border border-gray-100 overflow-hidden transition-all duration-200">
+                    {languages.map((lang) => (
+                      <div
+                        key={lang.code}
+                        className="flex items-center px-3 py-2 hover:bg-blue-50 cursor-pointer space-x-2 transition-colors"
+                        onClick={() => {
+                          i18n.changeLanguage(lang.code);
+                          setShowLanguageDropdown(false);
+                        }}
+                      >
+                        <img src={lang.flag} alt={lang.name} className="h-4 w-6 object-cover rounded" />
+                        <span className="text-sm text-[#0d3547] font-medium">{lang.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <Link
                 to="/login"
                 className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-4 py-2 rounded shadow-md transition-colors duration-200"
@@ -152,9 +147,41 @@ export default function Navbar() {
           <div className="fixed top-20 left-0 right-0 bg-white shadow-xl z-40 p-6 md:hidden border-t border-gray-100 transition-all duration-300">
             <div className="flex flex-col space-y-6">
               <NavLinks onClick={() => setMobileMenuOpen(false)} />
+              
+              {/* Mobile Language Selector */}
               <div className="pt-4">
-                <LanguageSelector />
+                <div className="relative">
+                  <button
+                    className="flex items-center justify-between border border-gray-200 px-3 py-2 rounded-lg bg-white hover:bg-gray-50 shadow-sm w-full transition-all duration-200"
+                    onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
+                  >
+                    <div className="flex items-center space-x-2">
+                      <img src={selectedLanguage.flag} alt={selectedLanguage.name} className="h-4 w-6 object-cover rounded" />
+                      <span className="text-sm text-[#2A7B9B] font-medium">{selectedLanguage.name}</span>
+                    </div>
+                    <FiChevronDown className={`w-4 h-4 text-[#2A7B9B] transition-transform duration-200 ${showLanguageDropdown ? "rotate-180" : ""}`} />
+                  </button>
+
+                  {showLanguageDropdown && (
+                    <div className="mt-2 bg-white rounded-lg shadow-xl w-full z-50 border border-gray-100 overflow-hidden transition-all duration-200">
+                      {languages.map((lang) => (
+                        <div
+                          key={lang.code}
+                          className="flex items-center px-3 py-2 hover:bg-blue-50 cursor-pointer space-x-2 transition-colors"
+                          onClick={() => {
+                            i18n.changeLanguage(lang.code);
+                            setShowLanguageDropdown(false);
+                          }}
+                        >
+                          <img src={lang.flag} alt={lang.name} className="h-4 w-6 object-cover rounded" />
+                          <span className="text-sm text-[#0d3547] font-medium">{lang.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
+
               <Link
                 to="/login"
                 className="block text-center bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg mt-6"
